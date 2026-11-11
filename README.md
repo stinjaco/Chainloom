@@ -7,19 +7,15 @@ Chainloom is a one-thumb offline Android puzzle game: an 8×8 board, a three-pie
 
 ## Where the source is
 
-There are no source files checked in. The whole Android project (`ChainloomAndroid/`) is stored as a base64 zip inside `.github/workflows/build-chainloom-apk.yml`. The workflow unpacks it and builds a debug APK.
+The Android project is in `ChainloomAndroid/`. It has its own `README.md`, `PRODUCT_BRIEF.md`, `QA_NOTES.md`, `LAUNCH_GUIDE.md`, `STORE_LISTING.md` and `PRIVACY_POLICY.md`.
 
-To get the source out locally, copy the block between the `CHAINLOOM_B64` markers into a file and run:
-
-```
-base64 -d chainloom.b64 > chainloom.zip && unzip chainloom.zip
-```
-
-The unpacked project has its own `README.md`, `PRODUCT_BRIEF.md`, `QA_NOTES.md`, `LAUNCH_GUIDE.md`, `STORE_LISTING.md` and `PRIVACY_POLICY.md`.
+Until November 2026 the source was stored as a base64 zip inside the build workflow. It was unpacked into normal files unchanged; the old form is in git history.
 
 ## Build
 
-Run the "Build Chainloom APK" workflow (Actions tab, or any push to `main`). The APK is uploaded as the `Chainloom-debug-apk` artifact and kept for 30 days.
+The "Build Chainloom APK" workflow runs on every push to `main`, on pull requests, and on demand from the Actions tab. The debug APK is uploaded as the `Chainloom-debug-apk` artifact and kept for 30 days.
+
+Locally: open `ChainloomAndroid/` in Android Studio, or run `gradle :app:assembleDebug` there with Gradle 8.13.
 
 ## Note
 
