@@ -1,0 +1,20 @@
+Chainloom final verification — 2026-08-20
+
+Pure Java compile: PASS
+PASS basic invariants: 100 games
+PASS save round trip
+PASS deterministic daily seed
+PASS deterministic continuation after save/resume
+games=1000 avgMoves=82.5 minMoves=8 maxMoves=628 avgScore=8314.278 avgBestCombo=2.174
+games=1000 avgMoves=620.146 minMoves=9 maxMoves=1663 avgScore=95690.078 avgBestCombo=7.352
+Android API-stub compile: PASS
+XML resource parse: PASS
+Sensitive/network scan: PASS (no matches)
+Shell bootstrap syntax: PASS
+--- manifest privacy flag ---
+4:        android:allowBackup="false"
+--- build targets ---
+7:    compileSdk = 36
+11:        minSdk = 23
+12:        targetSdk = 36
+14:        versionName = "1.0.0"
