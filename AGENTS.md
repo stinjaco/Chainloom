@@ -8,3 +8,4 @@ Instructions for any AI agent (Claude Code, Codex, others) working in this repo.
 - Version 1 has no ads, analytics, accounts or network permission. Do not add any without Jacob's OK.
 - Toolchain: JDK 17, Gradle 8.13, Android SDK 36.
 - End commit messages with `Agent: Claude` or `Agent: Codex`.
+- Public repo: no internal IP addresses, hostnames, home-network or hub file paths, tokens or keys in any file, commit message or PR text. Use generic wording.
